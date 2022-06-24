@@ -56,6 +56,7 @@
         
         .Figure {
             width: 100%;
+            display: block;
             position: relative;
             margin-right: auto;
             margin-left: auto;
@@ -64,6 +65,7 @@
             opacity: .7;
             -webkit-transform: translateY(25px);
             transform: translateY(25px);
+            cursor: pointer;
         }
         
         .Figure.viewscroll {
@@ -73,16 +75,11 @@
             -webkit-transition-delay: 0.2s;
             transition-delay: 0.2s;
         }
-        /* fade in for images */
+        /* fade in scroll for images */
         
         .hidden {
             display: none;
         }
-        
-        .Figure:hover .overlay {
-            opacity: 1;
-        }
-        /* image formatting */
         
         .pics {
             display: block;
@@ -104,7 +101,7 @@
             width: 100%;
             opacity: 0;
             transition: .5s ease;
-            background-color: rgba(0, 0, 0, 0.5)
+            background-color: rgba(0, 0, 0, 0.5);
         }
         
         .text {

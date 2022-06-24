@@ -22,3 +22,8 @@ for (let i = 0; i < items.length; i++) {
 }
 
 //click to show text
+
+$('.Figure').on('click', function(e) {
+    $(this).find('.overlay').css("opacity", 1);
+    console.log('yes');
+});

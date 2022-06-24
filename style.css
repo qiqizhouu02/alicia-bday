@@ -1,0 +1,177 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            fill: #F4F6F5;
+        }
+        
+        .block1 {
+            width: 100%;
+            max-height: 1000px;
+            display: block;
+        }
+        
+        .header-bg {
+            width: 100%;
+        }
+        
+        .block1-content {
+            position: relative;
+        }
+        
+        .text1 {
+            position: absolute;
+            margin-right: auto;
+            margin-left: auto;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        p {
+            text-align: center;
+            max-width: 70%;
+            font-size: 18px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .grid-wrapper {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width: 95%;
+            margin-top: 100px;
+        }
+        
+        .grid-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            max-width: 100%;
+            gap: 0.7em;
+            row-gap: 1ch;
+        }
+        
+        .Figure {
+            width: 100%;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            -webkit-transition: all 0.9s;
+            transition: all 0.8s;
+            opacity: .7;
+            -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+        }
+        
+        .Figure.viewscroll {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+            -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+        }
+        /* fade in for images */
+        
+        .hidden {
+            display: none;
+        }
+        
+        .Figure:hover .overlay {
+            opacity: 1;
+        }
+        /* image formatting */
+        
+        .pics {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: 400px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        /* overlay effect */
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.5)
+        }
+        
+        .text {
+            color: white;
+            font-size: 13px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: Arial;
+        }
+        
+        .block2 {
+            width: 100%;
+            display: none;
+        }
+        
+        .mobile {
+            max-width: 100%;
+            display: none;
+        }
+        
+        @media(max-width:900px) {
+            .grid-content {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        
+        @media(max-width:700px) {
+            .grid-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media(max-width: 500px) {
+            .grid-wrapper {
+                width: 100%;
+            }
+            .grid-content {
+                grid-template-columns: 1fr;
+            }
+            .pics {
+                height: 600px;
+            }
+            .block1 {
+                display: none;
+            }
+            .header-bg {
+                display: none;
+            }
+            .text1 {
+                display: none;
+            }
+            .block2 {
+                display: block;
+            }
+            .mobile {
+                display: block;
+                max-width: 100%;
+            }
+            #main-img {
+                display: none;
+            }
+            #main-text {
+                display: none;
+            }
+        }

@@ -56,7 +56,6 @@
         
         .Figure {
             width: 100%;
-            display: block;
             position: relative;
             margin-right: auto;
             margin-left: auto;
@@ -91,7 +90,12 @@
         }
         /* overlay effect */
         
+        .Figure:hover .overlay {
+            opacity: 1;
+        }
+        
         .overlay {
+            display: none;
             position: absolute;
             top: 0;
             bottom: 0;

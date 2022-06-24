@@ -31,6 +31,18 @@ $('.text').on('click', function() {
     $(this).parent().hide();
 });
 
+
 // $('.Figure').on('click', function() {
 //     $(this).find('.overlay').toggle();
 // });
+
+// var a;
+
+// function show_hide() {
+//     if (a == 1) {
+//         document.getElementsByClassName("overlay").style.opacity = "1";
+//         return a = 0;
+//     } else {
+//         document.getElementsByClassName("overlay").style.opacity = "0";
+//     }
+// }

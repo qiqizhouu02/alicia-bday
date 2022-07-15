@@ -23,13 +23,13 @@ for (let i = 0; i < items.length; i++) {
 
 //click to show text
 
-$('.Figure').on('click', function() {
-    $(this).find('.overlay').css("opacity", 1);
-});
+// $('.Figure').on('click', function() {
+//     $(this).find('.overlay').css("opacity", 1);
+// });
 
-$('.text').on('click', function() {
-    $(this).parent().hide();
-});
+// $('.text').on('click', function() {
+//     $(this).parent().hide();
+// });
 
 
 // $('.Figure').on('click', function() {
